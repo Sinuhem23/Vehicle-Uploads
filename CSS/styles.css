@@ -207,5 +207,24 @@ iframe {
   .landing_Image {
     height: 30vh;
   }
+  .some_favorites_container {
+    padding: 5%;
+  }
+  .some_favorites_container > ul {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(238, 238, 238);
+    padding: 2em;
+    text-align: start;
+  }
+  .fav_video_text {
+    padding: 0;
+  }
+
+  .upload_playlist_container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0;
+    justify-items: center;
+  }
 }
 /* End of Media Section  ////////////////////*/
