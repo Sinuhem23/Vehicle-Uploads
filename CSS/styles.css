@@ -179,9 +179,17 @@ iframe {
 /* Footer Section  ////////////////////*/
 .footer {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+
   width: 100%;
   height: 100px;
   background-color: rgb(56, 56, 56);
+}
+.footer_top_btn {
+  height: 3em;
+  justify-content: center;
 }
 /* End of Footer Section  ////////////////////*/
 
@@ -225,6 +233,14 @@ iframe {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     padding: 0;
     justify-items: center;
+  }
+}
+
+@media (min-width: 1020px) {
+  .recently_added_playlist_videos {
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1em;
+    grid-gap: 1em;
   }
 }
 /* End of Media Section  ////////////////////*/
