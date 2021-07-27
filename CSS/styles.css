@@ -99,8 +99,8 @@ iframe {
 
 .landing_Image {
   width: 100%;
-  height: 60vh;
-  padding-top: 10%;
+  height: 40vh;
+  padding-top: 5%;
 }
 
 .homepg_main_text {
@@ -110,13 +110,9 @@ iframe {
   font-size: 30px;
 }
 .home_Text {
-  display: flex;
-  color: black;
   font-weight: bold;
 }
-.add_account_btn {
-  margin-left: 50px;
-}
+
 
 /* End of Landing Page / Add Video Section /////////////////// */
 
@@ -141,7 +137,11 @@ iframe {
 }
 .upload_text_2 {
   background: rgb(238, 238, 238);
-  padding: 3em;
+  padding: 2em;
+}
+.upload_text_2 > h3 {
+  display: flex;
+  justify-content: center;
 }
 .recently_added_playlist_videos {
   display: grid;
@@ -234,8 +234,22 @@ iframe {
     padding: 0;
     justify-items: center;
   }
+  .homepg_main_text {
+    font-size: 32px;
+    padding: 1em;
+  }
+  .home_Text{
+    display: flex;
+    /* justify-content: center; */
+  flex-wrap: wrap;
+  color: black;
+  font-size: 12px;
 }
-
+.add_account_btn {
+  
+  margin-left: 0;
+}
+/* For Big Screens */
 @media (min-width: 1020px) {
   .recently_added_playlist_videos {
     grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
