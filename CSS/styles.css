@@ -99,7 +99,7 @@ iframe {
 
 .landing_Image {
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   padding-top: 5%;
 }
 
@@ -223,6 +223,7 @@ iframe {
   }
   .landing_Image {
     height: 30vh;
+    
   }
   .some_favorites_container {
     padding: 5%;
