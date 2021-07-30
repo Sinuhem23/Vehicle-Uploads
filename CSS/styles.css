@@ -60,6 +60,7 @@ iframe {
   padding: 20px;
   color: white;
   box-shadow: 3px 3px lightgray;
+
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
@@ -80,7 +81,8 @@ iframe {
 
 .icon-1 {
   height: 60px;
-  background-color: white;
+  /* background-color: white; */
+  border-radius: 30px;
   box-shadow: 3px 3px 3px rgb(156, 156, 156);
   animation: rotation 3s infinite linear;
 }
