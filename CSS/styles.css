@@ -1,3 +1,4 @@
+/* Affects All //////////////////////////*/
 *,
 *:before,
 *:after {
@@ -51,6 +52,7 @@ iframe {
   width: 300px;
   height: 200px;
 }
+/* End of Affects All ////////////////////////// */
 /* All Navbar Container //////////////////*/
 .all_Navbar_Container {
   position: sticky;
@@ -113,7 +115,6 @@ iframe {
   background-color: #333;
 }
 
-/* Navigation links */
 .sub_navbar a {
   display: inline-grid;
   justify-content: center;
@@ -132,7 +133,6 @@ iframe {
   overflow: hidden;
 }
 
-/* Subnav button */
 .subnav .subnavbtn {
   font-size: 16px;
   border: none;
@@ -144,13 +144,11 @@ iframe {
   margin: 0;
 }
 
-/* Add a red background color to navigation links on hover */
 .navbar a:hover,
 .subnav:hover .subnavbtn {
   background-color: rgb(0, 140, 255);
 }
 
-/* Style the subnav content - positioned absolute */
 .subnav-content {
   display: none;
   position: absolute;
@@ -159,7 +157,6 @@ iframe {
   width: 100%;
 }
 
-/* Style the subnav links */
 .subnav-content a {
   color: white;
 
@@ -167,7 +164,6 @@ iframe {
   text-decoration: none;
 }
 
-/* Add a grey background color on hover */
 .subnav-content a:hover {
   background-color: #eee;
   color: black;
@@ -215,12 +211,6 @@ iframe {
   padding: 2em;
   display: grid;
   align-items: center;
-
-  /* Flex */
-  /* display: flex;
-  padding: 5% 0;
-  justify-content: space-evenly;
-  background-color: rgb(238, 238, 238);*/
 }
 .upload_text_1 {
   justify-self: center;
@@ -313,6 +303,7 @@ iframe {
     position: initial;
   }
   /* End of All Navbar Container ///////////////// */
+
   /* Navbar ////////////////////////////// */
   .nav {
     flex-wrap: wrap;
@@ -334,8 +325,8 @@ iframe {
     width: 100%;
   }
   /* End of Navbar /////////////////////////// */
+
   /* Subnav /////////////////////////////// */
-  /* Subnav button */
   .subnav .subnavbtn {
     padding: 14px 0;
   }
@@ -346,25 +337,10 @@ iframe {
     flex-wrap: wrap-reverse;
   }
   /* End of Subnav //////////////////////// */
+
+  /* Add Video Section ////////////////*/
   .landing_Image {
     height: 30vh;
-  }
-  .some_favorites_container {
-    padding: 1em;
-  }
-  .some_favorites_container > ul {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    background-color: rgb(56, 56, 56);
-    padding: 2em;
-    text-align: start;
-    grid-gap: 2em;
-  }
-
-  .upload_playlist_container {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    padding: 0;
-    justify-items: center;
   }
   .homepg_main_text {
     font-size: 32px;
@@ -380,8 +356,33 @@ iframe {
   .add_account_btn {
     margin-bottom: 6em;
   }
-  .recently_added_playlist_videos {
+  /* End of Add Video Section  /////////////// */
+
+  /* Some Favorites Section ////////////////////////// */
+  .some_favorites_container {
+    padding: 1em;
+  }
+  .some_favorites_container > ul {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(56, 56, 56);
+    padding: 2em;
+    text-align: start;
     grid-gap: 2em;
+  }
+  .fav_video_text {
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* End of Some Favorites Section ////////////////////////// */
+
+  /* Upload to Favorites Section  ////////////////////////// */
+
+  .upload_playlist_container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0;
+    justify-items: center;
   }
   .upload_text_2 {
     padding: 0;
@@ -389,11 +390,10 @@ iframe {
   .upload_text_2 > h3 {
     color: white;
   }
-  .fav_video_text {
-    padding: 0;
-    font-size: 18px;
-    font-weight: bold;
+  .recently_added_playlist_videos {
+    grid-gap: 2em;
   }
+  /* End of Upload to Favorites Section ////////////////////////// */
 
   /* End of Media Section  ////////////////////*/
 }
