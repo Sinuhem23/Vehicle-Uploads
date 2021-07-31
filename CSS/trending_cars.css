@@ -176,13 +176,13 @@ iframe {
 }
 /* End of Sub-Navbar //////////////////////////////// */
 
-/* All Videos Section ////////////////// */
+/* Car Videos Section ////////////////// */
 
-.all_uploads {
+.cars_uploads {
   background: rgb(56, 56, 56);
   padding: 3em;
 }
-.all_uploads > h3 {
+.cars_uploads > h3 {
   display: flex;
   color: white;
   justify-content: center;
@@ -194,7 +194,7 @@ iframe {
   grid-gap: 1em;
   padding: 1em;
 }
-/* End of All Video Section ////////////////// */
+/* End of Car Video Section ////////////////// */
 
 /* Footer Section  ////////////////////*/
 .footer {
@@ -267,10 +267,10 @@ iframe {
 
   /* Car Videos Section  ////////////////////////// */
 
-  .car_uploads {
+  .cars_uploads {
     padding: 1em;
   }
-  .car_uploads h3 {
+  .cars_uploads h3 {
     color: white;
   }
   .recently_added_playlist_videos {
