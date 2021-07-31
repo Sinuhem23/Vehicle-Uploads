@@ -1,0 +1,273 @@
+/* Affects All //////////////////////////*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(34, 34, 34);
+  margin: 0;
+}
+a {
+  color: rgb(0, 140, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 83, 151);
+}
+span {
+  color: rgb(0, 140, 255);
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  list-style: none;
+}
+button {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+button:hover {
+  background-color: rgb(0, 83, 151);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+iframe {
+  width: 300px;
+  height: 200px;
+}
+/* End of Affects All ////////////////////////// */
+/* All Navbar Container //////////////////*/
+.all_Navbar_Container {
+  position: sticky;
+  top: 0;
+}
+/* End of All Navbar Container ///////////////// */
+/* Nav Section /////////////////// */
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(56, 56, 56);
+  padding: 20px;
+  color: white;
+  box-shadow: 3px 3px lightgray;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.search {
+  flex: 1;
+}
+.search input {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.website_name {
+  padding: 0 20px;
+}
+
+.icon-1 {
+  height: 60px;
+  /* background-color: white; */
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px rgb(156, 156, 156);
+  animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.icon-2 {
+  padding: 0 20px;
+}
+/* End of Nav Section /////////////////// */
+
+/* Sub-Navbar //////////////////////////////////// */
+/* The navigation menu */
+.sub_navbar {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.sub_navbar a {
+  display: inline-grid;
+  justify-content: center;
+  /* align-content: center; */
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  justify-content: flex-end;
+
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: rgb(0, 140, 255);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(0, 140, 255);
+  width: 100%;
+}
+
+.subnav-content a {
+  color: white;
+
+  justify-content: center;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: flex;
+  justify-content: center;
+}
+/* End of Sub-Navbar //////////////////////////////// */
+
+/* All Videos Section ////////////////// */
+
+.all_uploads {
+  background: rgb(56, 56, 56);
+  padding: 3em;
+}
+.all_uploads > h3 {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.recently_added_playlist_videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1em;
+  padding: 1em;
+}
+/* End of All Video Section ////////////////// */
+
+/* Footer Section  ////////////////////*/
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid rgb(238, 238, 238);
+  box-shadow: -3px -3px lightgray;
+}
+.footer_top_btn {
+  height: 3em;
+  justify-content: center;
+  width: 120px;
+}
+/* End of Footer Section  ////////////////////*/
+
+/* Media Section  ////////////////////*/
+/* For Big Screens */
+@media (min-width: 1020px) {
+  .recently_added_playlist_videos {
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 1em;
+    grid-gap: 3em;
+  }
+}
+@media (max-width: 650px) {
+  /* All Navbar Container //////////////////*/
+  .all_Navbar_Container {
+    position: initial;
+  }
+  /* End of All Navbar Container ///////////////// */
+
+  /* Navbar ////////////////////////////// */
+  .nav {
+    flex-wrap: wrap;
+    justify-items: space-around;
+    justify-content: center;
+
+    background-color: rgb(53, 53, 53);
+  }
+  .icon {
+    order: 0 !important;
+  }
+  .website_name {
+    order: 1 !important;
+    justify-content: center;
+    color: white;
+  }
+  .search {
+    order: 2 !important;
+    width: 100%;
+  }
+  /* End of Navbar /////////////////////////// */
+
+  /* Subnav /////////////////////////////// */
+  .subnav .subnavbtn {
+    padding: 14px 0;
+  }
+  .subnav:hover .subnav-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  /* End of Subnav //////////////////////// */
+
+  /* Motorcyle Videos Section  ////////////////////////// */
+
+  /* End of Motorcycle Videos Section ////////////////////////// */
+
+  /* End of Media Section  ////////////////////*/
+}
