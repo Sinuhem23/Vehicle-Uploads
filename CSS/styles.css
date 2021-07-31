@@ -52,6 +52,15 @@ iframe {
   height: 200px;
 }
 /* Nav Section /////////////////// */
+
+.all_Navbar_Container {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* overflow: hidden; */
+
+  position: sticky;
+  top: 0;
+}
 .nav {
   display: flex;
   align-items: center;
