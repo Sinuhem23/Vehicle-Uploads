@@ -51,16 +51,13 @@ iframe {
   width: 300px;
   height: 200px;
 }
-/* Nav Section /////////////////// */
-
+/* All Navbar Container //////////////////*/
 .all_Navbar_Container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* overflow: hidden; */
-
   position: sticky;
   top: 0;
 }
+/* End of All Navbar Container ///////////////// */
+/* Nav Section /////////////////// */
 .nav {
   display: flex;
   align-items: center;
@@ -311,6 +308,12 @@ iframe {
   }
 }
 @media (max-width: 650px) {
+  /* All Navbar Container //////////////////*/
+  .all_Navbar_Container {
+    position: initial;
+  }
+  /* End of All Navbar Container ///////////////// */
+  /* Navbar ////////////////////////////// */
   .nav {
     flex-wrap: wrap;
     justify-items: space-around;
@@ -330,6 +333,19 @@ iframe {
     order: 2 !important;
     width: 100%;
   }
+  /* End of Navbar /////////////////////////// */
+  /* Subnav /////////////////////////////// */
+  /* Subnav button */
+  .subnav .subnavbtn {
+    padding: 14px 0;
+  }
+  .subnav:hover .subnav-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  /* End of Subnav //////////////////////// */
   .landing_Image {
     height: 30vh;
   }
