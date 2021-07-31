@@ -15,11 +15,16 @@
       rel="stylesheet"
     />
     <!-- End of Google Fonts -->
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Vehicle Uploads</title>
   </head>
   <body>
     <div class="container">
-      <!--Nav Section  -->
+      <!--Navbar   -->
       <nav class="nav">
         <div>
           <a href="#"><img class="icon-1" src="../images/gears.png"/></a>
@@ -29,13 +34,55 @@
           <input type="search" placeholder="Search" />
         </div>
         <div class="icon-2">
-          <a href="/pages/home_page.html">Home</a>
+          <a href="#">Home</a>
         </div>
         <div class="icon-3">
-          <a href="#">Favs</a>
+          <a href="#">Login</a>
         </div>
       </nav>
-      <!-- End of Nav Section -->
+      <!-- End of Navbar -->
+
+      <!-- Sub-Navbar -->
+      <!-- The navigation menu -->
+      <div class="sub_navbar">
+        <a href="#">Favorites</a>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Playlist <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="#">Shuffle List</a>
+            <a href="#">Favorite List</a>
+            <a href="#">Queue List</a>
+            <a href="#">Entire List</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Account <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="#">My information</a>
+            <a href="#">My videos</a>
+            <a href="#">My playlist</a>
+            <a href="#">My favorites</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Trending <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="subnav-content">
+            <a href="#">Boats</a>
+            <a href="#">Cars</a>
+            <a href="#">Motorcycles</a>
+            <a href="#">Airplanes</a>
+            <a href="#">All</a>
+          </div>
+        </div>
+        <a href="#contact">History</a>
+      </div>
+      <!-- End of Sub-Navbar -->
 
       <!-- Add Video Section -->
       <div class="add_video_container ">
@@ -178,7 +225,7 @@
 
       <div class="share_container">
         <h3>Want to share videos with your buddies?</h3>
-        <button>Share</button>
+        <button class="share_btn">Share</button>
       </div>
 
       <!-- End of Want to Share Section -->

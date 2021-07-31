@@ -15,6 +15,7 @@ body {
 a {
   color: rgb(0, 140, 255);
   font-weight: bold;
+  text-decoration: none;
 }
 a:hover {
   color: rgb(0, 83, 151);
@@ -36,7 +37,6 @@ button {
   font-size: 15px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
-  width: 120px;
 }
 button:hover {
   background-color: rgb(0, 83, 151);
@@ -60,7 +60,6 @@ iframe {
   padding: 20px;
   color: white;
   box-shadow: 3px 3px lightgray;
-
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
@@ -98,6 +97,82 @@ iframe {
   padding: 0 20px;
 }
 /* End of Nav Section /////////////////// */
+
+/* Sub-Navbar //////////////////////////////////// */
+/* The navigation menu */
+.sub_navbar {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navigation links */
+.sub_navbar a {
+  display: inline-grid;
+  justify-content: center;
+  /* align-content: center; */
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  justify-content: flex-end;
+
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: rgb(0, 140, 255);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(0, 140, 255);
+  width: 100%;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  color: white;
+
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: flex;
+  justify-content: center;
+}
+/* End of Sub-Navbar //////////////////////////////// */
 
 /* Landing Page / Add Video Section /////////////////// */
 .add_video_container {
@@ -193,7 +268,9 @@ iframe {
   background-color: rgb(56, 56, 56);
   color: white;
 }
-
+.share_btn {
+  width: 120px;
+}
 /* End of Share Section ///////////////////// */
 
 /* Footer Section  ////////////////////*/
@@ -211,6 +288,7 @@ iframe {
 .footer_top_btn {
   height: 3em;
   justify-content: center;
+  width: 120px;
 }
 /* End of Footer Section  ////////////////////*/
 
