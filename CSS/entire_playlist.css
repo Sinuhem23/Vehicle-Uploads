@@ -56,6 +56,7 @@ iframe {
 .all_Navbar_Container {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 /* End of All Navbar Container ///////////////// */
 /* Nav Section /////////////////// */
@@ -175,16 +176,27 @@ iframe {
 }
 /* End of Sub-Navbar //////////////////////////////// */
 
-/* Car Videos Section ////////////////// */
+/* Airplane Videos Section ////////////////// */
 
-.cars_uploads {
+.entire_uploads {
   background: rgb(56, 56, 56);
-  padding: 3em;
+  /* padding: 6em 5em; */
+  margin: 4em 2em 8em 2em;
+  max-height: 500px;
 }
-.cars_uploads > h3 {
-  display: flex;
+.entire_uploads > h3 {
+  display: grid;
+  position: sticky;
+  top: 0;
   color: white;
+  margin-left: 10px;
+  padding: 10px;
   justify-content: center;
+
+  background-color: rgb(56, 56, 56);
+}
+.container_scroll {
+  overflow: scroll;
 }
 
 .recently_added_playlist_videos {
@@ -193,7 +205,18 @@ iframe {
   grid-gap: 1em;
   padding: 1em;
 }
-/* End of Car Video Section ////////////////// */
+.main_Favorite_Video {
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  width: auto;
+  padding: 1rem;
+}
+.main_iframe {
+  height: 100%;
+  width: 100%;
+}
+/* End of Aiplane Video Section ////////////////// */
 
 /* Footer Section  ////////////////////*/
 .footer {
@@ -263,19 +286,36 @@ iframe {
     flex-wrap: wrap-reverse;
   }
   /* End of Subnav //////////////////////// */
+  .airplane_uploads {
+    background: rgb(56, 56, 56);
+    padding: 3em;
+  }
+  .airplane_uploads > h3 {
+    display: flex;
+    color: white;
+    justify-content: center;
+  }
 
-  /* Car Videos Section  ////////////////////////// */
-
-  .cars_uploads {
+  .recently_added_playlist_videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1em;
     padding: 1em;
   }
-  .cars_uploads h3 {
+  /* Airplane Videos Section  ////////////////////////// */
+  .entire_uploads {
+    padding: 0;
+    display: grid;
+    margin: 3em 22px;
+  }
+  .entire_uploads h3 {
     color: white;
+    padding: 20px;
   }
   .recently_added_playlist_videos {
     grid-gap: 2em;
   }
-  /* End of Car Videos Section ////////////////////////// */
+  /* End of Airplane Videos Section ////////////////////////// */
 
   /* End of Media Section  ////////////////////*/
 }
