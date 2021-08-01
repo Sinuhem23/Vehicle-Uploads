@@ -249,7 +249,7 @@ iframe {
 @media (max-width: 650px) {
   /* All Navbar Container //////////////////*/
   .all_Navbar_Container {
-    position: initial;
+    position: sticky;
   }
   /* End of All Navbar Container ///////////////// */
 
@@ -279,30 +279,19 @@ iframe {
   .subnav .subnavbtn {
     padding: 14px 0;
   }
+  .sub_navbar a {
+    font-size: x-small;
+  }
   .subnav:hover .subnav-content {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap-reverse;
+    z-index: 1;
   }
   /* End of Subnav //////////////////////// */
-  .airplane_uploads {
-    background: rgb(56, 56, 56);
-    padding: 3em;
-  }
-  .airplane_uploads > h3 {
-    display: flex;
-    color: white;
-    justify-content: center;
-  }
 
-  .recently_added_playlist_videos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 1em;
-    padding: 1em;
-  }
-  /* Airplane Videos Section  ////////////////////////// */
+  /* Entire Playlist Section  ////////////////////////// */
   .entire_uploads {
     padding: 0;
     display: grid;
@@ -315,7 +304,7 @@ iframe {
   .recently_added_playlist_videos {
     grid-gap: 2em;
   }
-  /* End of Airplane Videos Section ////////////////////////// */
+  /* End of Entire Playlist Section ////////////////////////// */
 
   /* End of Media Section  ////////////////////*/
 }
