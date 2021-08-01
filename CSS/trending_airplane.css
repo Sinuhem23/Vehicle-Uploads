@@ -224,12 +224,6 @@ iframe {
   }
 }
 @media (max-width: 650px) {
-  /* All Navbar Container //////////////////*/
-  .all_Navbar_Container {
-    position: initial;
-  }
-  /* End of All Navbar Container ///////////////// */
-
   /* Navbar ////////////////////////////// */
   .nav {
     flex-wrap: wrap;
@@ -263,22 +257,7 @@ iframe {
     flex-wrap: wrap-reverse;
   }
   /* End of Subnav //////////////////////// */
-  .airplane_uploads {
-    background: rgb(56, 56, 56);
-    padding: 3em;
-  }
-  .airplane_uploads > h3 {
-    display: flex;
-    color: white;
-    justify-content: center;
-  }
 
-  .recently_added_playlist_videos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 1em;
-    padding: 1em;
-  }
   /* Airplane Videos Section  ////////////////////////// */
   .airplane_uploads {
     padding: 1em;

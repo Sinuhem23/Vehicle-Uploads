@@ -247,12 +247,6 @@ iframe {
   }
 }
 @media (max-width: 650px) {
-  /* All Navbar Container //////////////////*/
-  .all_Navbar_Container {
-    position: sticky;
-  }
-  /* End of All Navbar Container ///////////////// */
-
   /* Navbar ////////////////////////////// */
   .nav {
     flex-wrap: wrap;

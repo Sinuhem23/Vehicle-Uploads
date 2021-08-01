@@ -297,12 +297,6 @@ iframe {
   }
 }
 @media (max-width: 650px) {
-  /* All Navbar Container //////////////////*/
-  .all_Navbar_Container {
-    position: initial;
-  }
-  /* End of All Navbar Container ///////////////// */
-
   /* Navbar ////////////////////////////// */
   .nav {
     flex-wrap: wrap;
@@ -362,12 +356,14 @@ iframe {
     padding: 1em;
   }
   .some_favorites_container > ul {
-    color: rgb(0, 0, 0);
     font-weight: bold;
     background-color: rgb(56, 56, 56);
     padding: 2em;
     text-align: start;
     grid-gap: 2em;
+  }
+  .sub_navbar a {
+    font-size: x-small;
   }
   .fav_video_text {
     padding: 0;
