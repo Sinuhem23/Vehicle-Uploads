@@ -175,16 +175,18 @@ iframe {
 }
 /* End of Sub-Navbar //////////////////////////////// */
 
-/* Airplane Videos Section ////////////////// */
+/* Favorite Videos Section ////////////////// */
 
 .fav_playlist_uploads {
   background: rgb(56, 56, 56);
   padding: 3em;
 }
-.fav_playlist_uploads > h3 {
+.fav_playlist_text {
   display: flex;
   color: white;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 1em;
 }
 
 .recently_added_playlist_videos {
@@ -204,7 +206,7 @@ iframe {
   height: 100%;
   width: 100%;
 }
-/* End of Aiplane Video Section ////////////////// */
+/* End of Favorite Video Section ////////////////// */
 
 /* Footer Section  ////////////////////*/
 .footer {
@@ -231,7 +233,7 @@ iframe {
   .recently_added_playlist_videos {
     grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
     padding: 1em;
-    grid-gap: 3em;
+    grid-gap: 5em;
   }
 }
 @media (max-width: 650px) {
@@ -272,7 +274,7 @@ iframe {
   }
   /* End of Subnav //////////////////////// */
 
-  /* Airplane Videos Section  ////////////////////////// */
+  /* Favorite Videos Section  ////////////////////////// */
   .fav_playlist_uploads {
     padding: 1em;
   }
@@ -282,7 +284,7 @@ iframe {
   .recently_added_playlist_videos {
     grid-gap: 2em;
   }
-  /* End of Airplane Videos Section ////////////////////////// */
+  /* End of Favorite Videos Section ////////////////////////// */
 
   /* End of Media Section  ////////////////////*/
 }

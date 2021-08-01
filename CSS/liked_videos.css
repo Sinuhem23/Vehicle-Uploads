@@ -175,13 +175,13 @@ iframe {
 }
 /* End of Sub-Navbar //////////////////////////////// */
 
-/* Boat Videos Section ////////////////// */
+/* Airplane Videos Section ////////////////// */
 
-.boats_uploads {
+.liked_uploads {
   background: rgb(56, 56, 56);
   padding: 3em;
 }
-.boats_uploads > h3 {
+.liked_uploads > h3 {
   display: flex;
   color: white;
   justify-content: center;
@@ -193,7 +193,19 @@ iframe {
   grid-gap: 1em;
   padding: 1em;
 }
-/* End of Boat Videos Section ////////////////// */
+.main_Liked_Video {
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+  width: auto;
+  padding: 1rem;
+}
+.main_iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* End of Aiplane Video Section ////////////////// */
 
 /* Footer Section  ////////////////////*/
 .footer {
@@ -250,6 +262,9 @@ iframe {
   .subnav .subnavbtn {
     padding: 14px 0;
   }
+  .sub_navbar a {
+    font-size: x-small;
+  }
   .subnav:hover .subnav-content {
     display: flex;
     justify-content: space-evenly;
@@ -258,17 +273,18 @@ iframe {
   }
   /* End of Subnav //////////////////////// */
 
-  /* Boat Videos Section  ////////////////////////// */
-  .boats_uploads {
+  /* Liked Videos Section  ////////////////////////// */
+  .liked_uploads {
     padding: 1em;
   }
-  .boats_uploads h3 {
+  .liked_uploads h3 {
     color: white;
   }
   .recently_added_playlist_videos {
     grid-gap: 2em;
   }
-  /* End of Boat Videos Section ////////////////////////// */
+
+  /* End of Liked Videos Section ////////////////////////// */
 
   /* End of Media Section  ////////////////////*/
 }

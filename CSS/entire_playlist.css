@@ -242,8 +242,8 @@ iframe {
 @media (min-width: 1020px) {
   .recently_added_playlist_videos {
     grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
-    padding: 1em;
-    grid-gap: 3em;
+    padding: 5em;
+    grid-gap: 4em;
   }
 }
 @media (max-width: 650px) {
